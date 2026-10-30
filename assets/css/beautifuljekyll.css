@@ -1200,6 +1200,27 @@ footer a {
 
 /* Body background */
 body {
+
+  /* ===== NHS improved styles ===== */
+
+  /* Body text - NHS black */
+  body { color: #212b32; }
+
+  /* Secondary / meta text - NHS grey */
+  .post-meta, .blog-post-meta, small, .text-muted { color: #4c6272 !important; }
+
+  /* Visited links - NHS purple */
+  a:visited { color: #330072; }
+
+  /* Focus states - NHS yellow for accessibility */
+  a:focus, button:focus, input:focus, textarea:focus, select:focus {
+      outline: 4px solid #ffb81c !important;
+      outline-offset: 0 !important;
+  }
+
+  /* Nunito Sans font (closest free alternative to Frutiger) */
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+  body, h1, h2, h3, h4, h5, h6, p, a, li { font-family: 'Nunito Sans', Arial, sans-serif; }
     background-color: #f0f4f5;
     font-family: Arial, sans-serif;
 }

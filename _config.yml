@@ -53,6 +53,7 @@ share-links-active:
 
 url-pretty: "pharmacistdaz.github.io"
 
+readtime: true
 title-on-all-pages: true
 excerpt_length: 50
 feed_show_excerpt: true

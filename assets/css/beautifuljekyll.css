@@ -1124,3 +1124,82 @@ pre {
     display: inline-block;
   }
 }
+
+
+/* ===== NHS-inspired styles ===== */
+
+/* Navigation bar - NHS dark blue */
+.navbar-custom {
+    background-color: #003087 !important;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #d5e8f3 !important;
+}
+
+/* Page header / hero - NHS blue */
+.intro-header {
+    background-color: #005eb8 !important;
+}
+
+.intro-header .page-heading,
+.intro-header .post-heading h1,
+.intro-header .post-heading .meta {
+    color: #ffffff !important;
+}
+
+/* Links - NHS bright blue */
+a {
+    color: #005eb8;
+}
+
+a:hover {
+    color: #003087;
+}
+
+/* Post/card titles */
+.post-title a {
+    color: #003087;
+}
+
+.post-title a:hover {
+    color: #005eb8;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    color: #003087;
+}
+
+/* Footer - NHS dark blue */
+footer {
+    background-color: #003087 !important;
+    color: #ffffff !important;
+}
+
+footer a {
+    color: #d5e8f3 !important;
+}
+
+/* Read more button */
+.btn-primary {
+    background-color: #005eb8 !important;
+    border-color: #005eb8 !important;
+    color: #ffffff !important;
+}
+
+.btn-primary:hover {
+    background-color: #003087 !important;
+    border-color: #003087 !important;
+}
+
+/* Body background */
+body {
+    background-color: #f0f4f5;
+    font-family: Arial, sans-serif;
+}

@@ -8,7 +8,7 @@ I'm Darren — a pharmacist with a portfolio career that sits at the intersectio
 
 ## What I Do
 
-By day (most days), I work within the **Digital Citizen team** in the Transformation Directorate at **NHS England**, where I focus on the NHS App and how digital tools can put more power and information in the hands of patients. I believe technology should reduce friction — for patients navigating a complex system, and for the clinicians trying to support them.
+By day (most days), I work within the **Digital Citizen team** in the Transformation Directorate at **NHSE**, where I focus on the NHS App and how digital tools can put more power and information in the hands of patients. I believe technology should reduce friction — for patients navigating a complex system, and for the clinicians trying to support them.
 
 One day a week I return to the dispensary floor as a **community pharmacist**. It keeps me grounded. No amount of strategy documents or roadmaps replaces the experience of standing at the counter and understanding what patients actually need.
 
@@ -18,7 +18,7 @@ I work as a **Clinical Safety Officer (CSO)** — a role that sits at the heart 
 
 ## Professional Leadership
 
-I chair the **Digital Pharmacy Expert Advisory Group (DPEAG)** for the Royal College of Pharmacy, working to ensure that the pharmacy profession has a credible, informed voice in national conversations about digital health and technology.
+I chair the **Digital Pharmacy Expert Advisory Group (DPEAG)** for the Royal College of Pharmacy (RCPharm), working to ensure that the pharmacy profession has a credible, informed voice in national conversations about digital health and technology.
 
 I'm also a **Union Representative for the Pharmacists' Defence Association (PDA)** — because professional leadership isn't just about strategy. It's about making sure pharmacists on the ground are supported, heard and protected.
 
@@ -26,7 +26,7 @@ I'm also a **Union Representative for the Pharmacists' Defence Association (PDA)
 
 Pharmacy is at a crossroads. Funding is stretched, clinical complexity is rising, and the technology we work with often hasn't kept pace with what's being asked of us. At the same time, there's genuine innovation happening — in interoperability, in AI, in how patients access and understand their own health.
 
-This blog is where I think out loud about all of it. It's not official NHS or RCP output — it's my own perspective, as a pharmacist who has worked across community practice, national digital programmes and professional leadership. I try to write plainly, think carefully and be honest about what I don't know.
+This blog is where I think out loud about all of it. All views expressed here are entirely my own and do not represent the views of my employers or any membership or professional organisations I am associated with. I try to write plainly, think carefully and be honest about what I don't know.
 
 If any of it is useful to you — whether you're a fellow pharmacist, an NHS colleague, or someone who just cares about how healthcare is changing — then it's done its job.
 

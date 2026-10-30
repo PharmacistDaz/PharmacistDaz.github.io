@@ -3,6 +3,7 @@ layout: null
 ---
 
 @import url("pygment_highlights.css");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
 
 :root {
   /* config file CSS variables */
@@ -1198,29 +1199,76 @@ footer a {
     border-color: #003087 !important;
 }
 
-/* Body background */
+/* ===== NHS improved & blog enhancement styles ===== */
+
 body {
+  color: #212b32;
+  background-color: #f0f4f5;
+}
 
-  /* ===== NHS improved styles ===== */
+body, h1, h2, h3, h4, h5, h6, p, a, li {
+  font-family: 'Nunito Sans', Arial, sans-serif;
+}
 
-  /* Body text - NHS black */
-  body { color: #212b32; }
+.post-meta, .blog-post-meta, small, .text-muted {
+  color: #4c6272 !important;
+}
 
-  /* Secondary / meta text - NHS grey */
-  .post-meta, .blog-post-meta, small, .text-muted { color: #4c6272 !important; }
+a:visited { color: #330072; }
 
-  /* Visited links - NHS purple */
-  a:visited { color: #330072; }
+a:focus, button:focus, input:focus, textarea:focus, select:focus {
+  outline: 4px solid #ffb81c !important;
+  outline-offset: 0 !important;
+}
 
-  /* Focus states - NHS yellow for accessibility */
-  a:focus, button:focus, input:focus, textarea:focus, select:focus {
-      outline: 4px solid #ffb81c !important;
-      outline-offset: 0 !important;
-  }
+/* Blog cards: left accent stripe */
+.post-preview {
+  border-left: 4px solid #005eb8;
+  padding-left: 1.25rem;
+}
 
-  /* Nunito Sans font (closest free alternative to Frutiger) */
-  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
-  body, h1, h2, h3, h4, h5, h6, p, a, li { font-family: 'Nunito Sans', Arial, sans-serif; }
-    background-color: #f0f4f5;
-    font-family: Arial, sans-serif;
+/* Tag badges - NHS blue pills */
+.blog-tags a {
+  background-color: #005eb8 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 3px !important;
+  padding: 2px 10px !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  opacity: 1 !important;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+.blog-tags a:hover {
+  background-color: #003087 !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+}
+.blog-tags a:visited {
+  color: #ffffff !important;
+}
+
+/* Blockquote - NHS yellow accent */
+.blog-post blockquote {
+  border-left: 4px solid #ffb81c !important;
+  background: #fffbe6;
+  color: #212b32;
+  font-style: normal;
+  padding: 1rem 1.25rem;
+}
+
+/* Pagination / prev-next buttons */
+.pagination .page-item .page-link {
+  background-color: #005eb8;
+  color: #ffffff;
+  border-color: #005eb8;
+  border-radius: 4px;
+}
+.pagination .page-item .page-link:hover,
+.pagination .page-item .page-link:focus {
+  background-color: #003087 !important;
+  border-color: #003087 !important;
+  color: #ffffff !important;
 }

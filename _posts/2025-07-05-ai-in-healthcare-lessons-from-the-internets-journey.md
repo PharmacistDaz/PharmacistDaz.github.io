@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "AI in Healthcare: Lessons from the Internet's Journey"
+subtitle: "What a Three-Decade Digital Revolution Teaches Us About AI Adoption"
 date: 2025-07-05
-tags: [healthcare, technology]
+tags: [AI, digital-health, NHS]
 author: Pharmacist Daz
 ---
 

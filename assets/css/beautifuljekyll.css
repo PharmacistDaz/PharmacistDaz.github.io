@@ -1815,6 +1815,39 @@ footer a:focus {
   color: var(--text-col) !important;
 }
 
+.blog-post {
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+  border: 1px solid var(--border-col);
+  border-radius: 0.85rem;
+  background-color: var(--surface-col);
+  color: var(--text-col);
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+.blog-post p,
+.blog-post li {
+  color: var(--text-col);
+}
+
+.blog-post a {
+  color: var(--link-col);
+  text-decoration-thickness: 0.08em;
+}
+
+.blog-post a:visited {
+  color: var(--visited-col);
+}
+
+.blog-post a:hover,
+.blog-post a:focus {
+  color: var(--hover-col);
+}
+
+.blog-post .caption {
+  color: var(--muted-col);
+}
+
 .jumbotron,
 table tr,
 table tr:nth-child(2n) {

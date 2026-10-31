@@ -96,6 +96,10 @@ footer-hover-col: "#0085A1"
 
 date_format: "%B %-d, %Y"
 
+# Custom stylesheet layered over the theme
+site-css:
+  - "/assets/css/custom.css"
+
 #################################################################################
 # --- You don't need to touch anything below here (but you can if you want) --- #
 #################################################################################

@@ -1480,6 +1480,12 @@ footer a:focus {
   font-size: 0.9rem;
 }
 
+.topic-archive {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #e8e4d9;
+}
+
 .tag-sidebar-list,
 .tag-sidebar-group ul {
   margin: 0;
@@ -1528,6 +1534,12 @@ footer a:focus {
 .tag-sidebar-group a:focus {
   color: var(--hover-col);
   text-decoration: underline;
+}
+
+.post-archive-date {
+  display: block;
+  color: #667b75;
+  font-size: 0.75rem;
 }
 
 .about-profile-photo {
@@ -1737,6 +1749,7 @@ html[data-theme="dark"] .navbar-custom .navbar-toggler-icon {
 .post-heading .post-meta,
 .text-muted,
 .tag-sidebar > p,
+.post-archive-date,
 .tag-sidebar-group summary span {
   color: var(--muted-col) !important;
 }

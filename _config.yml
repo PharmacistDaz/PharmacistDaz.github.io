@@ -66,17 +66,17 @@ navbar-var-length: false
 # --- Colours / background image --- #
 ######################################
 
-page-col: "#f7f6f1"
-text-col: "#253b37"
-link-col: "#176b63"
-hover-col: "#b55b3d"
-navbar-col: "#fffdf8"
-navbar-text-col: "#253b37"
-navbar-border-col: "#e5e2d9"
-footer-col: "#203a36"
-footer-text-col: "#d7e2dc"
-footer-link-col: "#fffdf8"
-footer-hover-col: "#f1bd76"
+page-col: "#f3f6f7"
+text-col: "#2b3b45"
+link-col: "#276b91"
+hover-col: "#245c79"
+navbar-col: "#fbfcfc"
+navbar-text-col: "#2b3b45"
+navbar-border-col: "#dce5e9"
+footer-col: "#e8eff2"
+footer-text-col: "#465b67"
+footer-link-col: "#276b91"
+footer-hover-col: "#194f70"
 
 #################################
 # --- Web Analytics Section --- #

@@ -4,7 +4,7 @@ title: About Me
 subtitle: Pharmacist. Digital Health. Patient Safety.
 ---
 
-<img src="/assets/img/darren-profile.jpg" alt="Darren" style="float: right; margin: 0 0 1.5em 2em; border-radius: 8px; width: 180px;">
+<img src="{{ '/assets/img/darren-profile.jpg' | relative_url }}" alt="Darren" class="about-profile-photo">
 
 I'm Darren — a pharmacist with a portfolio career that sits at the intersection of frontline healthcare, digital transformation and professional leadership.
 

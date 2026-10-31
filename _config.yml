@@ -19,7 +19,7 @@ author: Pharmacist Daz
 ###############################################
 
 navbar-links:
-  Home: ""
+  Home: "/"
   About Me: "aboutme"
 
 ################

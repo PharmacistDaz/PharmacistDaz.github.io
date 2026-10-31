@@ -30,7 +30,6 @@ A thoughtful, grounding listen for anyone working in or around community pharmac
 - C+D Community: [Pharmacy in Person with Jane Lambert](https://community.chemistanddruggist.co.uk/posts/pharmacy-in-person-with-jane-lambert)
 - Apple Podcasts: [Chemist + Druggist pharmacy podcast](https://podcasts.apple.com/gb/podcast/chemist-druggist-pharmacy-podcast/id1205540938)
 
-The source also listed a SoundCloud MP3, but it returned 404 when checked, so it is not included.
 
 *Originally shared on LinkedIn; the source gives an approximate month of March 2026.*
 

@@ -39,7 +39,6 @@ Essential listening.
 - YouTube: [Digital Health Unplugged: The Forgotten Patients](https://www.youtube.com/watch?v=cJEp-n0UW_E)
 - Direct MP3: [Listen to Episode 120](https://mcdn.podbean.com/mf/web/gpeecp8t7b2v25h8/Ep_120_The_Forgotten_Patients6q67g.mp3)
 
-The Digital Health article linked in the source returned 403 when checked, so it is not included.
 
 *Originally shared on LinkedIn; the source gives an approximate month of May 2026.*
 

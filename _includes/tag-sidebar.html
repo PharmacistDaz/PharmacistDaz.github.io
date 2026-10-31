@@ -20,7 +20,7 @@
               {% for post in yearly_posts %}
                 <li>
                   <a href="{{ post.url | relative_url }}">{{ post.title | strip_html | escape }}</a>
-                  <time class="post-archive-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d" }}</time>
+                  <time class="post-archive-date" datetime="{{ post.date | date_to_xmlschema }}">{% if post.display_date %}{{ post.display_date }}{% else %}{{ post.date | date: "%B %-d" }}{% endif %}</time>
                 </li>
               {% endfor %}
             </ul>

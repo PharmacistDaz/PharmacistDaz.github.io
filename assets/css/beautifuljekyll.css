@@ -1127,138 +1127,6 @@ pre {
 }
 
 
-/* ===== NHS-inspired styles ===== */
-
-/* Navigation bar - NHS dark blue */
-.navbar-custom {
-    background-color: #003087 !important;
-}
-
-.navbar-custom .navbar-brand,
-.navbar-custom .nav-link {
-    color: #ffffff !important;
-}
-
-.navbar-custom .nav-link:hover {
-    color: #d5e8f3 !important;
-}
-
-/* Page header / hero - NHS blue */
-.intro-header {
-    background-color: #005eb8 !important;
-}
-
-.intro-header .page-heading,
-.intro-header .post-heading h1,
-.intro-header .post-heading .meta {
-    color: #ffffff !important;
-}
-
-/* Links - NHS bright blue */
-a {
-    color: #005eb8;
-}
-
-a:hover {
-    color: #003087;
-}
-
-/* Post/card titles */
-.post-title a {
-    color: #003087;
-}
-
-.post-title a:hover {
-    color: #005eb8;
-}
-
-/* Headings */
-h1, h2, h3, h4 {
-    color: #003087;
-}
-
-/* Footer - NHS dark blue */
-footer {
-    background-color: #003087 !important;
-    color: #ffffff !important;
-}
-
-footer a {
-    color: #d5e8f3 !important;
-}
-
-/* Read more button */
-.btn-primary {
-    background-color: #005eb8 !important;
-    border-color: #005eb8 !important;
-    color: #ffffff !important;
-}
-
-.btn-primary:hover {
-    background-color: #003087 !important;
-    border-color: #003087 !important;
-}
-
-/* ===== NHS improved & blog enhancement styles ===== */
-
-body {
-  color: #212b32;
-  background-color: #f0f4f5;
-}
-
-body, h1, h2, h3, h4, h5, h6, p, a, li {
-  font-family: 'Nunito Sans', Arial, sans-serif;
-}
-
-.post-meta, .blog-post-meta, small, .text-muted {
-  color: #4c6272 !important;
-}
-
-a:visited { color: #330072; }
-
-a:focus, button:focus, input:focus, textarea:focus, select:focus {
-  outline: 4px solid #ffb81c !important;
-  outline-offset: 0 !important;
-}
-
-/* Blog cards: left accent stripe */
-.post-preview {
-  border-left: 4px solid #005eb8;
-  padding-left: 1.25rem;
-}
-
-/* Tag badges - NHS blue pills */
-.blog-tags a {
-  background-color: #005eb8 !important;
-  color: #ffffff !important;
-  border: none !important;
-  border-radius: 3px !important;
-  padding: 2px 10px !important;
-  font-size: 0.75rem !important;
-  font-weight: 600 !important;
-  opacity: 1 !important;
-  margin-right: 4px;
-  margin-bottom: 4px;
-  display: inline-block;
-}
-.blog-tags a:hover {
-  background-color: #003087 !important;
-  color: #ffffff !important;
-  border-color: transparent !important;
-}
-.blog-tags a:visited {
-  color: #ffffff !important;
-}
-
-/* Blockquote - NHS yellow accent */
-.blog-post blockquote {
-  border-left: 4px solid #ffb81c !important;
-  background: #fffbe6;
-  color: #212b32;
-  font-style: normal;
-  padding: 1rem 1.25rem;
-}
-
 /* --- PharmacistDaz editorial refresh --- */
 
 :root {
@@ -1576,20 +1444,6 @@ footer a:focus {
   }
 }
 
-/* Pagination / prev-next buttons */
-.pagination .page-item .page-link {
-  background-color: #005eb8;
-  color: #ffffff;
-  border-color: #005eb8;
-  border-radius: 4px;
-}
-.pagination .page-item .page-link:hover,
-.pagination .page-item .page-link:focus {
-  background-color: #003087 !important;
-  border-color: #003087 !important;
-  color: #ffffff !important;
-}
-
 /* --- Topic sidebar and About photo --- */
 
 .page-layout-row {
@@ -1696,5 +1550,317 @@ footer a:focus {
     width: 180px;
     max-width: 60%;
     margin: 0 auto 1.5rem;
+  }
+}
+
+/* --- Softer NHS-blue accent palette and user theme switch --- */
+
+:root {
+  color-scheme: light;
+  --page-col: #f3f6f7;
+  --text-col: #2b3b45;
+  --link-col: #276b91;
+  --hover-col: #245c79;
+  --navbar-col: #fbfcfc;
+  --navbar-text-col: #2b3b45;
+  --navbar-border-col: #dce5e9;
+  --footer-col: #e8eff2;
+  --footer-text-col: #465b67;
+  --footer-link-col: #276b91;
+  --footer-hover-col: #194f70;
+  --surface-col: #ffffff;
+  --surface-soft-col: #edf3f5;
+  --border-col: #dce5e9;
+  --muted-col: #5e717c;
+  --accent-col: #477d9a;
+  --accent-soft-col: #e4eef3;
+  --accent-hover-col: #b66f55;
+  --hero-start-col: #e7f0f4;
+  --hero-end-col: #dce9ef;
+  --hero-text-col: #294858;
+  --hero-muted-col: #526b79;
+  --focus-col: #ad6d36;
+  --visited-col: #62577b;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --page-col: #18252e;
+  --text-col: #e1e9ed;
+  --link-col: #94c9e6;
+  --hover-col: #c1e0f0;
+  --navbar-col: #202f38;
+  --navbar-text-col: #e1e9ed;
+  --navbar-border-col: #394b55;
+  --footer-col: #142029;
+  --footer-text-col: #bfccd2;
+  --footer-link-col: #a7d4eb;
+  --footer-hover-col: #d2eaf5;
+  --surface-col: #22323c;
+  --surface-soft-col: #293b45;
+  --border-col: #3a4d57;
+  --muted-col: #adbdc5;
+  --accent-col: #9ac5db;
+  --accent-soft-col: #2c414d;
+  --accent-hover-col: #e0a087;
+  --hero-start-col: #253b48;
+  --hero-end-col: #304b5a;
+  --hero-text-col: #edf4f7;
+  --hero-muted-col: #c8d8df;
+  --focus-col: #f0bf74;
+  --visited-col: #d0b8e4;
+}
+
+body {
+  background-color: var(--page-col) !important;
+  color: var(--text-col);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-col);
+}
+
+a {
+  color: var(--link-col);
+}
+
+a:visited {
+  color: var(--visited-col);
+}
+
+a:hover,
+a:focus,
+.post-preview a:visited {
+  color: var(--hover-col);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--focus-col) !important;
+  outline-offset: 3px !important;
+}
+
+.navbar-custom {
+  background-color: var(--navbar-col) !important;
+  border-color: var(--navbar-border-col);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+  color: var(--navbar-text-col) !important;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover,
+.navbar-custom .navbar-nav .nav-link:focus {
+  color: var(--link-col) !important;
+}
+
+.navbar-custom .navbar-toggler {
+  border-color: var(--navbar-border-col);
+}
+
+html[data-theme="dark"] .navbar-custom .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.navbar-custom .theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.navbar-custom .theme-toggle[aria-pressed="true"] {
+  color: var(--link-col) !important;
+}
+
+.intro-header:not(.big-img) {
+  background: linear-gradient(125deg, var(--hero-start-col), var(--hero-end-col)) !important;
+}
+
+.intro-header:not(.big-img) .page-heading,
+.intro-header:not(.big-img) .post-heading,
+.intro-header:not(.big-img) .post-heading h1,
+.intro-header:not(.big-img) .post-heading .post-meta,
+.intro-header:not(.big-img) .page-heading h1 {
+  color: var(--hero-text-col) !important;
+}
+
+.intro-header:not(.big-img) .page-heading .page-subheading,
+.intro-header:not(.big-img) .post-heading .post-subheading,
+.intro-header:not(.big-img) .post-heading .post-meta {
+  color: var(--hero-muted-col) !important;
+}
+
+.home-intro,
+.post-preview,
+.tag-sidebar,
+.pagination .page-item .page-link {
+  border-color: var(--border-col);
+  background-color: var(--surface-col);
+  color: var(--text-col);
+}
+
+.home-eyebrow,
+.home-about-link {
+  color: var(--accent-hover-col);
+}
+
+.post-preview .post-title,
+.post-preview a,
+.post-preview a:visited {
+  color: var(--text-col);
+}
+
+.post-preview a:hover,
+.post-preview a:focus,
+.post-preview .post-read-more {
+  color: var(--link-col);
+}
+
+.post-preview .post-subtitle,
+.post-preview .post-meta,
+.post-heading .post-meta,
+.text-muted,
+.tag-sidebar > p,
+.tag-sidebar-group summary span {
+  color: var(--muted-col) !important;
+}
+
+.post-preview {
+  border-left-color: var(--accent-col);
+}
+
+.post-preview:hover {
+  border-left-color: var(--accent-hover-col);
+}
+
+.blog-tags a,
+.blog-tags a:visited {
+  border-color: var(--border-col) !important;
+  background-color: var(--accent-soft-col) !important;
+  color: var(--text-col) !important;
+}
+
+.blog-tags a:hover,
+.blog-tags a:focus {
+  border-color: var(--link-col) !important;
+  background-color: var(--surface-soft-col) !important;
+  color: var(--link-col) !important;
+}
+
+.tag-sidebar-group {
+  border-color: var(--border-col);
+}
+
+.tag-sidebar-group summary {
+  color: var(--text-col);
+}
+
+.tag-sidebar-group a {
+  color: var(--link-col);
+}
+
+.pagination .page-item .page-link {
+  border-color: var(--border-col);
+  color: var(--text-col);
+}
+
+.pagination .page-item .page-link:hover,
+.pagination .page-item .page-link:focus {
+  border-color: var(--link-col) !important;
+  background-color: var(--link-col) !important;
+  color: var(--page-col) !important;
+}
+
+footer,
+footer p.text-muted,
+footer .footer-links a {
+  background-color: var(--footer-col) !important;
+  color: var(--footer-text-col) !important;
+}
+
+footer a {
+  color: var(--footer-link-col) !important;
+}
+
+footer a:hover,
+footer a:focus {
+  color: var(--footer-hover-col) !important;
+}
+
+.btn-primary {
+  border-color: var(--link-col) !important;
+  background-color: var(--link-col) !important;
+  color: var(--page-col) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  border-color: var(--hover-col) !important;
+  background-color: var(--hover-col) !important;
+}
+
+.blog-post blockquote {
+  border-left-color: var(--accent-hover-col) !important;
+  background-color: var(--surface-soft-col) !important;
+  color: var(--text-col) !important;
+}
+
+.jumbotron,
+table tr,
+table tr:nth-child(2n) {
+  background-color: var(--surface-col);
+  color: var(--text-col);
+}
+
+.table,
+table tr,
+table td,
+table th {
+  border-color: var(--border-col);
+}
+
+pre,
+.highlight,
+.highlight pre {
+  background-color: var(--surface-soft-col);
+  color: var(--text-col);
+}
+
+#beautifuljekyll-search-overlay {
+  background-color: var(--page-col);
+  color: var(--text-col);
+}
+
+#beautifuljekyll-search-overlay input,
+#beautifuljekyll-search-overlay a {
+  border-color: var(--border-col);
+  background-color: var(--surface-col);
+  color: var(--text-col);
+}
+
+@media (max-width: 1199px) {
+  .navbar-custom .theme-toggle {
+    padding-left: 0.9375rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
   }
 }

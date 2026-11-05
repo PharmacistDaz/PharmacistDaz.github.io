@@ -3,6 +3,8 @@ layout: post
 title: "Good enough to stay: 29 years and counting"
 date: 2026-11-05
 description: "Reflecting on 29 years in community pharmacy, the support that shaped a career, and what makes a workplace good enough to stay."
+excerpt: >-
+  I missed it. At the start of this month, an anniversary passed me by without my realising: 29 years with the same community pharmacy company. My first thought was not celebration. It was a question. Will I make it to 30?
 tags: [community-pharmacy, workplace-culture, career-development, leadership, reflection]
 author: Pharmacist Daz
 ---

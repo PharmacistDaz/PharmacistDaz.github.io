@@ -3,7 +3,7 @@ layout: post
 title: "Radical with Amol Rajan - Knowledge and Nostalgia: Why a University Education Should Be Free (Louisa Munch)"
 date: 2026-01-12
 description: "A short WIALT share of Radical with Amol Rajan on why a university education should be free."
-tags: [WIALT, podcast, BBC-Radio-4, education]
+tags: [WIALT, podcast, professional-development]
 author: Pharmacist Daz
 canonical_url: "https://www.linkedin.com/feed/update/urn:li:activity:7416397085446643712/"
 cover-img: "/assets/img/wialt/2026-01-12-radical-university-education-free-louisa-munch.jpg"

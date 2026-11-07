@@ -2,7 +2,7 @@
 layout: post
 title: "A Guest Blog"
 date: 2023-08-20
-tags: [pharmacy, pharmacy-technicians, patient-group-directions]
+tags: [pharmacy]
 author: Guest contributor
 canonical_url: "https://pharmacydownload.wordpress.com/2023/08/20/a-guest-blog/"
 ---

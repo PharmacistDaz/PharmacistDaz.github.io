@@ -2,7 +2,7 @@
 layout: post
 title: "Words Matter"
 date: 2023-06-09
-tags: [reflection, communication, workplace-culture]
+tags: [reflection, professional-development]
 author: Pharmacist Daz
 canonical_url: "https://pharmacydownload.wordpress.com/2023/06/09/words-matter/"
 ---

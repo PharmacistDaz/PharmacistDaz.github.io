@@ -2,7 +2,7 @@
 layout: post
 title: "Discover the Best Health, Technology, and News RSS Feeds"
 date: 2024-06-09
-tags: [digital-health, technology, RSS]
+tags: [technology, media]
 author: Pharmacist Daz
 canonical_url: "https://pharmacydownload.wordpress.com/2024/06/09/discover-the-best-health-technology-and-news-rss-feeds/"
 ---

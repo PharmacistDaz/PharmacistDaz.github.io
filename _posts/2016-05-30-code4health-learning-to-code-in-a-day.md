@@ -3,7 +3,7 @@ layout: post
 title: "Code4Health - learning to code in a day"
 date: 2016-05-30
 description: "A write-up of a Code4Health pharmacy community event in Bradford where participants learned to build a simple app with MIT App Inventor."
-tags: [code4health, pharmacy, digital-health, coding, app-development, events, bradford, mit-app-inventor]
+tags: [technology, pharmacy, professional-development]
 author: Pharmacist Daz
 canonical_url: "https://www.linkedin.com/pulse/code4health-learning-code-day-darren-powell"
 cover-img: "/assets/img/linkedin/code4health-learning-to-code-in-a-day/cover.jpg"

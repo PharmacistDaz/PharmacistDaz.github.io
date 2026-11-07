@@ -3,7 +3,7 @@ layout: post
 title: "Talking Pharmacy 2026 Episode 3: The DPP Shortage and Foundation Training"
 date: 2026-03-08
 description: "The DPP shortage affecting foundation trainee pharmacists, plus CPE transparency and the funding crisis in Wales."
-tags: [WIALT, podcast, pharmacy-training, DPP-shortage, foundation-pharmacist, UK-pharmacy, pharmacy-workforce]
+tags: [WIALT, podcast, pharmacy]
 author: Pharmacist Daz
 canonical_url: "https://www.linkedin.com/feed/update/urn:li:activity:7436423126919323649/"
 cover-img: "/assets/img/wialt/2026-03-08-talking-pharmacy-dpp-shortage.jpg"

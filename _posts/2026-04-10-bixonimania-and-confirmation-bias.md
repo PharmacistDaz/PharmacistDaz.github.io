@@ -3,7 +3,7 @@ layout: post
 title: "Bixonimania and Confirmation Bias"
 date: 2026-04-10
 description: "How a deliberately invented medical condition was taken up by major AI systems, and what it means for clinical safety and AI governance."
-tags: [clinical-safety, artificial-intelligence, patient-safety, ai-governance, dcb0129, health-informatics, pharmacy, nhs-digital]
+tags: [patient-safety, AI, dcb0129, technology, pharmacy]
 author: Pharmacist Daz
 canonical_url: "https://www.linkedin.com/pulse/bixonimania-confirmation-bias-darren-powell-eszre"
 cover-img: "/assets/img/linkedin/bixonimania-and-confirmation-bias/cover.png"

@@ -2,7 +2,7 @@
 layout: post
 title: "In good faith"
 date: 2021-02-06
-tags: [pharmacy, healthcare, substance-misuse]
+tags: [pharmacy, healthcare]
 author: Pharmacist Daz
 canonical_url: "https://pharmacydownload.wordpress.com/2021/02/06/in-good-faith/"
 ---

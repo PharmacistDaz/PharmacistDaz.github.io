@@ -6,7 +6,7 @@ date_precision: month
 display_date: May 2026
 original_date: "May 2026 (approximate)"
 description: "Professor Nick Barber on why medicines so often fail in the real world, and the link to NMS practice."
-tags: [WIALT, podcast, medicines-optimisation, pharmacy, NMS, patient-safety, pharmacist]
+tags: [WIALT, podcast, medicines, pharmacy, patient-safety]
 author: Pharmacist Daz
 cover-img: "/assets/img/wialt/2026-05-how-to-take-drugs-professor-nick-barber.jpg"
 ---

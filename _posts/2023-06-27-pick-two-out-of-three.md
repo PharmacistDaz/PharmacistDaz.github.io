@@ -2,7 +2,7 @@
 layout: post
 title: "Pick Two out of Three..."
 date: 2023-06-27
-tags: [pharmacy, community-pharmacy, NHS]
+tags: [pharmacy, NHS]
 author: Pharmacist Daz
 canonical_url: "https://pharmacydownload.wordpress.com/2023/06/27/pick-two-out-of-three/"
 ---

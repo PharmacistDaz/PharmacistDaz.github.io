@@ -3,7 +3,7 @@ layout: post
 title: "HMR 2012 Regulation 225 on a Saturday morning"
 date: 2026-10-24
 description: "A personal account of an emergency supply refusal, what Regulation 225 of the Human Medicines Regulations 2012 actually requires, and a practical checklist for pharmacists."
-tags: [pharmacy, emergency-supply, hmr-2012, regulation-225, controlled-drugs, pharmacy-law, patient-safety, professional-practice]
+tags: [pharmacy, emergency-supply, hmr-2012, regulation-225, controlled-drugs, pharmacy-law, patient-safety, professional-standards]
 author: Pharmacist Daz
 canonical_url: "https://www.linkedin.com/pulse/hmr-2012-regulation-225-saturday-morning-darren-powell-t9bte"
 cover-img: "/assets/img/linkedin/hmr-2012-regulation-225-on-a-saturday-morning/cover.jpg"

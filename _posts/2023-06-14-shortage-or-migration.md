@@ -2,7 +2,7 @@
 layout: post
 title: "Shortage or Migration"
 date: 2023-06-14
-tags: [pharmacy, community-pharmacy, pharmacy-workforce]
+tags: [pharmacy]
 author: Pharmacist Daz
 canonical_url: "https://pharmacydownload.wordpress.com/2023/06/14/shortage-or-migration/"
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "A Personal Healthcare Journey"
 date: 2022-06-11
-tags: [healthcare, patient-experience, health-inequalities]
+tags: [healthcare]
 author: Pharmacist Daz
 canonical_url: "https://pharmacydownload.wordpress.com/2022/06/11/a-personal-healthcare-journey/"
 ---

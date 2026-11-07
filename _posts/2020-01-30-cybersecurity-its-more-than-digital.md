@@ -2,7 +2,7 @@
 layout: post
 title: "Cybersecurity it's more than digital"
 date: 2020-01-30
-tags: [cybersecurity, healthcare, digital-health]
+tags: [technology, healthcare]
 author: Pharmacist Daz
 canonical_url: "https://pharmacydownload.wordpress.com/2020/01/30/cybersecurity-its-more-than-digital/"
 ---

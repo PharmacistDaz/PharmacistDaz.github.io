@@ -2,7 +2,7 @@
 layout: post
 title: "A Professional Panic."
 date: 2023-09-02
-tags: [pharmacy, professional-standards, revalidation]
+tags: [pharmacy, professional-standards]
 author: Pharmacist Daz
 canonical_url: "https://pharmacydownload.wordpress.com/2023/09/02/a-professional-panic/"
 ---

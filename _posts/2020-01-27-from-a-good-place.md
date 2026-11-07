@@ -2,7 +2,7 @@
 layout: post
 title: "From a good place"
 date: 2020-01-27
-tags: [reflection, communication, human-factors]
+tags: [reflection, professional-development]
 author: Pharmacist Daz
 canonical_url: "https://pharmacydownload.wordpress.com/2020/01/27/from-a-good-place/"
 ---

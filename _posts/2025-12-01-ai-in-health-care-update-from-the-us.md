@@ -6,7 +6,7 @@ date_precision: month
 display_date: December 2025
 original_date: "December 2025 (approximate)"
 description: "A short listen to an episode giving an update on AI in US health care."
-tags: [WIALT, podcast, AI-in-healthcare, digital-health]
+tags: [WIALT, podcast, AI, technology]
 author: Pharmacist Daz
 cover-img: "/assets/img/wialt/2025-12-ai-in-health-care-update-from-the-us.webp"
 ---

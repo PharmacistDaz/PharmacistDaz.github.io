@@ -6,7 +6,7 @@ date_precision: month
 display_date: April 2026
 original_date: "April 2026 (approximate)"
 description: "Declan Hadley on three decades of NHS informatics, local ownership of AI and safety keeping pace with technology."
-tags: [WIALT, podcast, healthtech, NHS, digital-health, AI-in-healthcare]
+tags: [WIALT, podcast, technology, NHS, AI]
 author: Pharmacist Daz
 cover-img: "/assets/img/wialt/2026-04-35-years-inside-the-nhs-healthtech-podcast.webp"
 ---

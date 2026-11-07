@@ -3,7 +3,7 @@ layout: post
 title: "The Hidden Cost of Efficiency Pressure"
 subtitle: "Why Safety Assurance Must Come Before Speed"
 date: 2026-02-21
-tags: [patient-safety, digital-health, NHS]
+tags: [patient-safety, technology, NHS]
 author: Pharmacist Daz
 ---
 

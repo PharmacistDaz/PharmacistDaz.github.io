@@ -3,7 +3,7 @@ layout: post
 title: "9 pills a day and not even ill: Adrian Chiles on polypharmacy, trust and the medication review"
 date: 2026-10-31
 description: "Reflections on Adrian Chiles' Aural Apothecary episode on polypharmacy, trust and medication reviews."
-tags: [WIALT, podcast, polypharmacy, medication-review, shared-decision-making, pharmacy, NHS]
+tags: [WIALT, podcast, medicines, healthcare, pharmacy, NHS]
 author: Pharmacist Daz
 canonical_url: "https://www.linkedin.com/feed/update/urn:li:activity:7522249168065753088/"
 cover-img: "/assets/img/wialt/2026-10-31-adrian-chiles-polypharmacy-aural-apothecary.webp"

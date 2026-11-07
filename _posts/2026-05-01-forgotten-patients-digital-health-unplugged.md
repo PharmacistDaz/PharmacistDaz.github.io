@@ -6,7 +6,7 @@ date_precision: month
 display_date: May 2026
 original_date: "May 2026 (approximate)"
 description: "Digital exclusion and the NHS App as front door, prompted by Digital Health Unplugged episode 120."
-tags: [WIALT, podcast, digital-inclusion, digital-health, health-inequalities, NHS, NHS-App, patient-equity]
+tags: [WIALT, podcast, healthcare, technology, NHS]
 author: Pharmacist Daz
 cover-img: "/assets/img/wialt/2026-05-forgotten-patients-digital-health-unplugged.jpg"
 ---

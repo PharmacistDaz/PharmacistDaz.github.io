@@ -3,7 +3,7 @@ layout: post
 title: "Cognitive Offloading to AI"
 date: 2026-06-21
 description: "A reflection on how leaning on AI can erode critical thinking, with implications for note-making and clinical documentation."
-tags: [artificial-intelligence, critical-thinking, cognitive-offloading, automation-bias, clinical-practice, ambient-voice-technology, obsidian, reflection]
+tags: [AI, reflection, pharmacy, technology]
 author: Pharmacist Daz
 canonical_url: "https://www.linkedin.com/pulse/cognitive-offloading-ai-darren-powell-suv6e"
 cover-img: "/assets/img/linkedin/cognitive-offloading-to-ai/cover.png"

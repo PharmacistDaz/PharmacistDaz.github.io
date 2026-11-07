@@ -2,7 +2,7 @@
 layout: post
 title: "Community Pharmacy has a future?"
 date: 2022-03-05
-tags: [community-pharmacy, pharmacy, pharmacy-workforce]
+tags: [pharmacy]
 author: Pharmacist Daz
 canonical_url: "https://pharmacydownload.wordpress.com/2022/03/05/community-pharmacy-has-a-future/"
 ---

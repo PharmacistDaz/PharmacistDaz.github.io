@@ -6,7 +6,7 @@ date_precision: month
 display_date: February 2026
 original_date: "February 2026 (approximate)"
 description: "Nathaniel Whittemore's practical walkthrough of building a 10-agent OpenClaw team for research and operations."
-tags: [WIALT, podcast, AI, AI-agents, productivity]
+tags: [WIALT, podcast, AI, technology]
 author: Pharmacist Daz
 cover-img: "/assets/img/wialt/2026-02-building-a-10-agent-ai-workforce.jpg"
 ---

@@ -6,7 +6,7 @@ date_precision: month
 display_date: March 2026
 original_date: "March 2026 (approximate)"
 description: "Jane Lambert on neurodivergence, empathy and the role community pharmacy can play in supporting ADHD and autism."
-tags: [WIALT, podcast, community-pharmacy, neurodivergence, ADHD, accessible-healthcare, women-in-healthcare]
+tags: [WIALT, podcast, pharmacy, healthcare]
 author: Pharmacist Daz
 cover-img: "/assets/img/wialt/2026-03-jane-lambert-neurodivergence-pharmacy-in-person.png"
 ---

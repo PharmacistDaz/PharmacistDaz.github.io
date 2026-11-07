@@ -6,7 +6,7 @@ date_precision: month
 display_date: April 2026
 original_date: "April 2026 (approximate)"
 description: "Dr Leyla Hannbeck, Yasmin Karsan and Khalid Khan on independent prescribing, funding and pharmacy's road to 2030."
-tags: [WIALT, podcast, pharmacy, NHS-reform, independent-prescribing, healthcare-innovation, primary-care]
+tags: [WIALT, podcast, pharmacy, NHS, technology, healthcare]
 author: Pharmacist Daz
 cover-img: "/assets/img/wialt/2026-04-pharmacy-at-a-crossroads-lets-talk-health.webp"
 ---

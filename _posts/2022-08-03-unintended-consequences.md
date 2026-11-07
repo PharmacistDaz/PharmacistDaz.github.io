@@ -2,7 +2,7 @@
 layout: post
 title: "Unintended Consequences"
 date: 2022-08-03
-tags: [community-pharmacy, pharmacy, pharmacy-workforce]
+tags: [pharmacy]
 author: Pharmacist Daz
 canonical_url: "https://pharmacydownload.wordpress.com/2022/08/03/unintended-consequences/"
 ---

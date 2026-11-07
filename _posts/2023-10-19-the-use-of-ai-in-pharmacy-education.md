@@ -2,7 +2,7 @@
 layout: post
 title: "The use of AI in Pharmacy Education"
 date: 2023-10-19
-tags: [AI, pharmacy, education]
+tags: [AI, pharmacy, professional-development]
 author: Pharmacist Daz
 canonical_url: "https://pharmacydownload.wordpress.com/2023/10/19/the-use-of-ai-in-pharmacy-education/"
 ---

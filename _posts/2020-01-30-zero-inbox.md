@@ -2,7 +2,7 @@
 layout: post
 title: "Zero Inbox"
 date: 2020-01-30
-tags: [productivity, healthcare, technology]
+tags: [technology, healthcare]
 author: Pharmacist Daz
 canonical_url: "https://pharmacydownload.wordpress.com/2020/01/30/zero-inbox/"
 ---

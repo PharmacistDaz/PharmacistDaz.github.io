@@ -3,7 +3,7 @@ layout: post
 title: "The Future of UK Law in the Age of AI - What a Hallucinating Court Filing Should Teach Every Regulated Profession"
 date: 2026-07-26
 description: "What an AI-hallucinated court filing teaches pharmacy and every regulated profession about verifying AI output."
-tags: [WIALT, podcast, AI-in-healthcare, digital-health, pharmacy, professional-standards, patient-safety]
+tags: [WIALT, podcast, AI, technology, pharmacy, professional-standards, patient-safety]
 author: Pharmacist Daz
 canonical_url: "https://www.linkedin.com/feed/update/urn:li:activity:7487216514576707584/"
 cover-img: "/assets/img/wialt/2026-07-26-future-of-uk-law-ai-in-the-uk.jpg"

@@ -6,7 +6,7 @@ date_precision: month
 display_date: December 2025
 original_date: "December 2025 (approximate)"
 description: "A short WIALT share of Radical with Professor Richard Thaler on behavioural economics."
-tags: [WIALT, podcast, BBC-Radio-4, behavioural-economics]
+tags: [WIALT, podcast, reflection]
 author: Pharmacist Daz
 cover-img: "/assets/img/wialt/2025-12-radical-irrational-humans-richard-thaler.jpg"
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "Lady Whistledown on Pharmacy"
 date: 2024-05-19
-tags: [pharmacy, community-pharmacy, humour]
+tags: [pharmacy, media]
 author: Pharmacist Daz
 canonical_url: "https://pharmacydownload.wordpress.com/2024/05/19/lady-whistledown-on-pharmacy/"
 ---

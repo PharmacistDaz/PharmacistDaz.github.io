@@ -6,7 +6,7 @@ date_precision: month
 display_date: December 2025
 original_date: "December 2025 (approximate)"
 description: "A short WIALT share of Radical with Amol Rajan and Sir Nick Clegg on limiting the power of big tech."
-tags: [WIALT, podcast, BBC-Sounds, big-tech, digital-regulation]
+tags: [WIALT, podcast, technology]
 author: Pharmacist Daz
 cover-img: "/assets/img/wialt/2025-12-radical-digital-dominance-nick-clegg.jpg"
 ---

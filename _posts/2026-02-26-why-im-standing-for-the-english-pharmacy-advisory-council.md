@@ -3,7 +3,7 @@ layout: post
 title: "Why I'm Standing for the English Pharmacy Advisory Council"
 subtitle: "Making the Case for Digital, Safety and Workforce at the EPAC"
 date: 2026-02-26
-tags: [pharmacy, professional-leadership, digital-health, NHS]
+tags: [pharmacy, professional-leadership, technology, NHS]
 author: Pharmacist Daz
 ---
 

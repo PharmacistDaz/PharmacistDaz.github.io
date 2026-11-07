@@ -3,7 +3,7 @@ layout: post
 title: "What do you do when how you see yourself doesn't match how you're being seen?"
 date: 2025-12-07
 description: "A reflection on the gap between self-evaluation and external evaluation, and what an LLM analysis of years of personal notes revealed."
-tags: [reflection, self-evaluation, systems-thinking, leadership, artificial-intelligence, personal-development, healthcare, career]
+tags: [reflection, professional-development, professional-leadership, AI, healthcare]
 author: Pharmacist Daz
 canonical_url: "https://www.linkedin.com/pulse/what-do-you-when-how-see-yourself-doesnt-match-youre-being-powell-dmdre"
 cover-img: "/assets/img/linkedin/when-how-you-see-yourself-doesnt-match-how-youre-seen/cover.png"

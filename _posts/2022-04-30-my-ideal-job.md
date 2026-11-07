@@ -2,7 +2,7 @@
 layout: post
 title: "My ideal job..."
 date: 2022-04-30
-tags: [community-pharmacy, career, workplace-culture]
+tags: [pharmacy, professional-development]
 author: Pharmacist Daz
 canonical_url: "https://pharmacydownload.wordpress.com/2022/04/30/my-ideal-job/"
 ---

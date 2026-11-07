@@ -2,7 +2,7 @@
 layout: post
 title: "Troll or Truth"
 date: 2021-05-01
-tags: [pharmacy, professional-leadership, social-media]
+tags: [pharmacy, professional-leadership, media]
 author: Pharmacist Daz
 canonical_url: "https://pharmacydownload.wordpress.com/2021/05/01/troll-or-truth/"
 ---

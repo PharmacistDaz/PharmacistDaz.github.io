@@ -2,7 +2,7 @@
 layout: post
 title: "Unprecedented Times"
 date: 2022-09-10
-tags: [reflection, technology, history]
+tags: [reflection, technology]
 author: Pharmacist Daz
 canonical_url: "https://pharmacydownload.wordpress.com/2022/09/10/unprecedented-times/"
 ---

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Fellows of the Royal Pharmaceutical Society and Royal College of Pharmacy, 2015 to 2026</title>
+<meta name="description" content="Interactive chart of the number of new Fellows appointed by each award round of the Royal Pharmaceutical Society (now the Royal College of Pharmacy), 2015 to November 2026.">
+<style>
+/* Self-contained: no external fonts, scripts or images. Colours follow the visitor's light/dark setting.
+   Force a theme with ?theme=light or ?theme=dark on the page URL (useful when embedding in an iframe). */
+:root{
+  --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#8a8985; --grid:#e6e5e1;
+  --series:#2a78d6; --card:#f4f3ef; color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#8d8c86; --grid:#363632;
+    --series:#3987e5; --card:#242422; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#8d8c86; --grid:#363632;
+  --series:#3987e5; --card:#242422; color-scheme:dark;
+}
+html,body{margin:0;background:var(--surface)}
+.rcp{
+  box-sizing:border-box; max-width:960px; margin:0 auto; padding:20px 16px 24px;
+  font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink);
+}
+.rcp *{box-sizing:border-box}
+.rcp h2{font-size:1.35rem;line-height:1.25;margin:0 0 4px}
+.rcp .sub{margin:0 0 16px;color:var(--ink2);font-size:.92rem}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:16px}
+.stat{background:var(--card);border-radius:10px;padding:10px 12px}
+.stat .n{font-size:1.45rem;font-weight:700;line-height:1.2}
+.stat .l{font-size:.8rem;color:var(--ink2)}
+.controls{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin-bottom:12px}
+.seg{display:inline-flex;border:1px solid var(--grid);border-radius:8px;overflow:hidden}
+.seg button{font:inherit;font-size:.88rem;background:transparent;color:var(--ink);border:0;padding:7px 12px;cursor:pointer}
+.seg button+button{border-left:1px solid var(--grid)}
+.seg button[aria-pressed="true"]{background:var(--series);color:#fff}
+.controls label{font-size:.88rem;color:var(--ink2);display:inline-flex;gap:6px;align-items:center}
+.controls select,.controls .btn{font:inherit;font-size:.88rem;color:var(--ink);background:var(--surface);border:1px solid var(--grid);border-radius:8px;padding:6px 8px}
+.controls .btn{cursor:pointer}
+.rcp button:focus-visible,.rcp select:focus-visible,.rcp input:focus-visible,.rcp summary:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.chartwrap{position:relative;width:100%}
+.chartwrap svg{display:block;width:100%;height:auto;overflow:visible}
+.chartwrap svg text{fill:var(--ink2);font:11px system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.chartwrap svg .val{fill:var(--ink);font-weight:700;font-size:12px}
+.chartwrap svg .ytitle{font-size:11px}
+.gridline{stroke:var(--grid);stroke-width:1}
+.axis{stroke:var(--grid);stroke-width:1.5}
+.fill{fill:var(--series)}
+.fill.partial{fill:url(#rcp-hatch);stroke:var(--series);stroke-width:1.5}
+.hatch-line{fill:var(--series)}
+.gap{fill:none;stroke:var(--muted);stroke-width:1.5;stroke-dasharray:3 3}
+.hit{fill:transparent;cursor:pointer;outline:none}
+.hit:focus-visible{stroke:var(--ink);stroke-width:2;stroke-dasharray:none}
+svg.has-active .bar{opacity:.45;transition:opacity .12s}
+svg.has-active .bar.on{opacity:1}
+.anim .bar .fill{transform-box:fill-box;transform-origin:50% 100%;animation:rcp-grow .45s ease-out both}
+@keyframes rcp-grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@media (prefers-reduced-motion:reduce){.anim .bar .fill{animation:none}}
+.tip{position:absolute;z-index:3;pointer-events:none;max-width:270px;background:var(--surface);color:var(--ink);
+  border:1px solid var(--grid);border-radius:10px;padding:9px 11px;box-shadow:0 6px 18px rgba(0,0,0,.2);font-size:.82rem;line-height:1.4}
+.tip[hidden]{display:none}
+.tip .t{font-weight:700;font-size:.9rem}
+.tip .big{font-size:1.15rem;font-weight:700;margin:2px 0}
+.tip .m{color:var(--ink2)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;margin:10px 0 0;font-size:.82rem;color:var(--ink2)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{display:inline-block;width:14px;height:14px;border-radius:3px}
+.sw.solid{background:var(--series)}
+.sw.hatch{background:repeating-linear-gradient(45deg,var(--series) 0 2px,transparent 2px 5px);border:1.5px solid var(--series)}
+.sw.dash{border:1.5px dashed var(--muted)}
+.tablewrap h3{font-size:1rem;margin:18px 0 6px}
+.tablewrap h3:first-child{margin-top:0}
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.86rem}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--grid);vertical-align:top}
+th{color:var(--ink2);font-weight:600}
+td.num{font-variant-numeric:tabular-nums;font-weight:700}
+.notes{margin-top:16px;font-size:.86rem;color:var(--ink2)}
+.notes summary{cursor:pointer;color:var(--ink);font-weight:600}
+.notes ul{margin:8px 0 0;padding-left:20px}
+.notes li{margin-bottom:4px}
+.src{margin:14px 0 0;font-size:.8rem;color:var(--ink2)}
+.src a{color:var(--series)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+</style>
+</head>
+<body>
+<section class="rcp" id="rcp" aria-labelledby="rcp-title">
+  <h2 id="rcp-title">New Fellows by award round</h2>
+  <p class="sub">Fellowship for distinction in the profession of pharmacy (FRPharmS, now FRCPharm), 2015 to November 2026</p>
+
+  <div class="stats" id="stats" aria-live="polite"></div>
+
+  <div class="controls">
+    <div class="seg" role="group" aria-label="Choose a view">
+      <button type="button" data-view="rounds" aria-pressed="true">By round</button>
+      <button type="button" data-view="years" aria-pressed="false">By calendar year</button>
+      <button type="button" data-view="table" aria-pressed="false">Table</button>
+    </div>
+    <label>From
+      <select id="from" aria-label="Show data from year"></select>
+    </label>
+    <label><input type="checkbox" id="gaps" checked> Show periods with no published figure</label>
+    <button type="button" class="btn" id="csv">Download CSV</button>
+  </div>
+
+  <div class="chartwrap" id="chartwrap">
+    <svg id="chart" role="group" aria-label="Bar chart of new Fellows. Use the Table view for the full data."></svg>
+    <div class="tip" id="tip" hidden></div>
+  </div>
+  <div class="tablewrap" id="tablewrap" hidden></div>
+  <div class="legend" id="legend"></div>
+
+  <details class="notes">
+    <summary>Notes and caveats</summary>
+    <ul>
+      <li>Counts are new Fellows designated by the Panel of Fellows for distinction in the profession of pharmacy. Honorary Fellowships, Faculty Fellowships and posthumous Fellowships are not included.</li>
+      <li>No published count was found for May 2015, May 2016, November 2016, November 2017, May 2018 and one of the two 2019 rounds. Calendar-year totals for 2015 to 2019 are therefore partial and shown as "at least".</li>
+      <li>November 2015: two secondary sources differ by one (47 or 48). It is plotted as 48.</li>
+      <li>2019: one round of 22 Fellows was published; whether it was the May or November round is unconfirmed.</li>
+      <li>The Royal Pharmaceutical Society became the Royal College of Pharmacy on 15 April 2026. The May 2026 round straddles that change: the 34 Fellows were announced by the College on 10 August 2026 as its first FRCPharm cohort.</li>
+      <li>The November 2026 round had not been announced at the time of writing, and Fellowship submissions are paused while the College reviews the process.</li>
+      <li>Where no official total was published, counts come from published lists of names. Society-wide Fellow totals are not used because they are net of deaths and resignations.</li>
+    </ul>
+  </details>
+
+  <p class="src">Sources: Royal Pharmaceutical Society and Royal College of Pharmacy announcements, The Pharmaceutical Journal and trade press, for example
+    <a href="https://www.rcpharm.org/the-royal-college-of-pharmacy-fellows/" target="_blank" rel="noopener">RCPharm Fellows page</a>,
+    <a href="https://www.rcpharm.org/news/new-rps-fellows-november-2025/" target="_blank" rel="noopener">November 2025 announcement</a> and
+    <a href="https://community.chemistanddruggist.co.uk/posts/rcpharm-appoints-inaugural-cohort-of-fellows" target="_blank" rel="noopener">Chemist and Druggist on the first RCPharm cohort</a>.
+    Compiled 6 November 2026.</p>
+</section>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ---------------------------------------------------------------
+     DATA. Edit this array to update the chart.
+     v    = new Fellows (null when no figure is published)
+     s    = status: ok | check (published with a caveat) | gap | pending
+     disp = optional label to show instead of v (for example "47-48")
+     post = posthumous Fellowships announced in the same round (not counted in v)
+  --------------------------------------------------------------- */
+  var ROUNDS = [
+    {id:"2015-05",year:2015,part:"May",ax:"May",label:"May 2015",v:null,s:"gap"},
+    {id:"2015-11",year:2015,part:"Nov",ax:"Nov",label:"Nov 2015",v:48,disp:"47-48",s:"check",conf:"Secondary sources only",note:"Two secondary sources differ by one (47 or 48). Plotted as 48."},
+    {id:"2016-05",year:2016,part:"May",ax:"May",label:"May 2016",v:null,s:"gap"},
+    {id:"2016-11",year:2016,part:"Nov",ax:"Nov",label:"Nov 2016",v:null,s:"gap"},
+    {id:"2017-05",year:2017,part:"May",ax:"May",label:"May 2017",v:42,s:"ok",conf:"Official list, counted (1 to 42)",note:"Counted from the RPS announcement list."},
+    {id:"2017-11",year:2017,part:"Nov",ax:"Nov",label:"Nov 2017",v:null,s:"gap"},
+    {id:"2018-05",year:2018,part:"May",ax:"May",label:"May 2018",v:null,s:"gap"},
+    {id:"2018-11",year:2018,part:"Nov",ax:"Nov",label:"Nov 2018",v:27,s:"ok",conf:"Official figure, verified by count",note:"The Pharmaceutical Journal, 26 November 2018."},
+    {id:"2019-A",year:2019,part:"Round A",ax:"A",label:"2019 (round A)",v:22,s:"check",conf:"Official figure, month unconfirmed",note:"Published RPS announcement. Whether this was the May or November round is unconfirmed."},
+    {id:"2019-B",year:2019,part:"Round B",ax:"B",label:"2019 (round B)",v:null,s:"gap"},
+    {id:"2020-06",year:2020,part:"Jun",ax:"Jun",label:"Jun 2020",v:7,s:"ok",post:1,conf:"Official figure, verified by count",note:"One further posthumous Fellowship, not counted. The lowest round on record here."},
+    {id:"2020-11",year:2020,part:"Nov",ax:"Nov",label:"Nov 2020",v:30,s:"ok",conf:"Official figure, verified by count"},
+    {id:"2021-05",year:2021,part:"May",ax:"May",label:"May 2021",v:22,s:"ok",conf:"Official figure",note:"Month inferred, as a separate November 2021 notice exists."},
+    {id:"2021-11",year:2021,part:"Nov",ax:"Nov",label:"Nov 2021",v:19,s:"ok",conf:"Official figure, verified by count"},
+    {id:"2022-05",year:2022,part:"May",ax:"May",label:"May 2022",v:13,s:"ok",conf:"Official figure, verified by count"},
+    {id:"2022-11",year:2022,part:"Nov",ax:"Nov",label:"Nov 2022",v:24,s:"ok",conf:"Official figure, verified by count"},
+    {id:"2023-05",year:2023,part:"May",ax:"May",label:"May 2023",v:31,s:"ok",conf:"Official figure, verified by count"},
+    {id:"2023-11",year:2023,part:"Nov",ax:"Nov",label:"Nov 2023",v:18,s:"ok",conf:"Official figure, verified by count"},
+    {id:"2024-05",year:2024,part:"May",ax:"May",label:"May 2024",v:19,s:"ok",post:1,conf:"Official figure, verified by count",note:"One further posthumous Fellowship, not counted."},
+    {id:"2024-11",year:2024,part:"Nov",ax:"Nov",label:"Nov 2024",v:39,s:"ok",conf:"Official figure",note:"13 of these Fellows were Scotland-based."},
+    {id:"2025-05",year:2025,part:"May",ax:"May",label:"May 2025",v:28,s:"ok",conf:"Official figure"},
+    {id:"2025-11",year:2025,part:"Nov",ax:"Nov",label:"Nov 2025",v:17,s:"ok",conf:"Official figure, verified by count"},
+    {id:"2026-05",year:2026,part:"May",ax:"May",label:"May 2026",v:34,s:"ok",conf:"Official figure, verified by count",note:"First FRCPharm cohort, announced by the Royal College of Pharmacy on 10 August 2026. Nominations closed under the RPS on 21 April 2026."},
+    {id:"2026-11",year:2026,part:"Nov",ax:"Nov",label:"Nov 2026",v:null,s:"pending",note:"Not yet announced. Fellowship submissions are paused while the College reviews the process."}
+  ];
+  var FIRST_YEAR = 2015, LAST_YEAR = 2026;
+
+  var NS = "http://www.w3.org/2000/svg";
+  var $ = function (id) { return document.getElementById(id); };
+  var root = document.documentElement;
+  var svg = $("chart"), wrap = $("chartwrap"), tip = $("tip"), tablewrap = $("tablewrap");
+  var state = { view: "rounds", from: FIRST_YEAR, gaps: true };
+  var cur = [], geo = [], hits = [], curW = 0, lastW = 0;
+
+  /* Optional URL settings: ?theme=light|dark  ?view=rounds|years|table  ?from=2020 */
+  var q = new URLSearchParams(location.search);
+  if (q.get("theme") === "light" || q.get("theme") === "dark") root.setAttribute("data-theme", q.get("theme"));
+  if (["rounds", "years", "table"].indexOf(q.get("view")) > -1) state.view = q.get("view");
+  var qf = parseInt(q.get("from"), 10);
+  if (qf >= FIRST_YEAR && qf <= LAST_YEAR) state.from = qf;
+
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
+  function el(name, attrs, parent) {
+    var e = document.createElementNS(NS, name);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(e);
+    return e;
+  }
+  function confText(r) {
+    if (r.conf) return r.conf;
+    if (r.s === "gap") return "No published figure found";
+    if (r.s === "pending") return "Not yet announced";
+    return "Official figure";
+  }
+  function inRange() { return ROUNDS.filter(function (r) { return r.year >= state.from; }); }
+
+  /* ---------- build the items for the current view ---------- */
+  function buildItems() {
+    var R = inRange(), list;
+    if (state.view === "years") {
+      var m = {}, order = [];
+      R.forEach(function (r) { if (!m[r.year]) { m[r.year] = []; order.push(r.year); } m[r.year].push(r); });
+      list = order.map(function (y) {
+        var rs = m[y];
+        var known = rs.filter(function (r) { return r.v !== null; });
+        var total = known.reduce(function (a, r) { return a + r.v; }, 0);
+        var complete = known.length === rs.length;
+        var post = rs.reduce(function (a, r) { return a + (r.post || 0); }, 0);
+        var s = !known.length ? "gap" : (complete ? "ok" : "partial");
+        return {
+          key: String(y), title: String(y), ax: String(y), ax2: "", label: String(y),
+          v: known.length ? total : null, s: s, partial: s === "partial",
+          lines: rs.map(function (r) { return r.part + ": " + (r.v !== null ? (r.disp || r.v) : (r.s === "pending" ? "not yet announced" : "no figure")); }),
+          conf: s === "ok" ? "Both rounds published" : (s === "partial" ? "Partial: at least this many, as some rounds have no figure" : "No published figures"),
+          note: post ? "Excludes " + post + " posthumous Fellowship" + (post > 1 ? "s" : "") + "." : ""
+        };
+      });
+    } else {
+      list = R.map(function (r) {
+        return { key: r.id, title: r.label, ax: r.ax, ax2: String(r.year), label: r.label, v: r.v, disp: r.disp,
+                 s: r.s, partial: false, lines: [], conf: confText(r), note: r.note || "" };
+      });
+    }
+    return state.gaps ? list : list.filter(function (i) { return i.v !== null; });
+  }
+
+  /* ---------- summary cards (always based on rounds in range) ---------- */
+  function renderStats() {
+    var R = inRange().filter(function (r) { return r.s !== "pending"; });
+    var K = R.filter(function (r) { return r.v !== null; });
+    var cards;
+    if (!K.length) {
+      cards = [["0", "Fellows in published rounds"], ["0 of " + R.length, "Rounds with a published figure"]];
+    } else {
+      var total = K.reduce(function (a, r) { return a + r.v; }, 0);
+      var hi = K.reduce(function (a, r) { return r.v > a.v ? r : a; });
+      var lo = K.reduce(function (a, r) { return r.v < a.v ? r : a; });
+      cards = [
+        [String(total), "New Fellows in published rounds"],
+        [K.length + " of " + R.length, "Rounds with a published figure"],
+        [(total / K.length).toFixed(1), "Average per published round"],
+        [(hi.disp || hi.v) + " (" + hi.label + ")", "Largest round"],
+        [lo.v + " (" + lo.label + ")", "Smallest round"]
+      ];
+    }
+    $("stats").innerHTML = cards.map(function (c) {
+      return '<div class="stat"><div class="n">' + esc(c[0]) + '</div><div class="l">' + esc(c[1]) + "</div></div>";
+    }).join("");
+  }
+
+  function renderLegend() {
+    var h = '<span><i class="sw solid"></i>' + (state.view === "years" ? "Both rounds published" : "Published figure") + "</span>";
+    if (state.view === "years") h += '<span><i class="sw hatch"></i>Partial: at least this many</span>';
+    if (state.gaps) h += '<span><i class="sw dash"></i>' + (state.view === "years" ? "No published figures" : "No published figure, or not yet announced") + "</span>";
+    if (state.view !== "table") h += '<span>Hover, tap or use the arrow keys on a bar for details.</span>';
+    $("legend").innerHTML = state.view === "table" ? "" : h;
+  }
+
+  /* ---------- tooltip ---------- */
+  function showTip(i) {
+    var it = cur[i], g = geo[i]; if (!it || !g) return;
+    var big = it.v !== null ? esc((state.view === "rounds" && it.disp ? it.disp : it.v) + (it.partial ? "+" : "")) + " new Fellows" : (it.s === "pending" ? "Not yet announced" : "No published figure");
+    var h = '<div class="t">' + esc(it.title) + '</div><div class="big">' + big + "</div>";
+    if (it.lines.length) h += '<div class="m">' + esc(it.lines.join("; ")) + "</div>";
+    h += '<div class="m">' + esc(it.conf) + "</div>";
+    if (it.note) h += '<div class="m">' + esc(it.note) + "</div>";
+    tip.innerHTML = h; tip.hidden = false;
+    var tw = tip.offsetWidth, th = tip.offsetHeight;
+    /* Sit beside the bar so the bar and its label stay visible */
+    var gap = g.bw / 2 + 10;
+    var left = g.cx + gap + tw <= curW - 4 ? g.cx + gap : g.cx - gap - tw;
+    left = Math.max(4, left);
+    var top = Math.max(4, Math.min(g.top - 6, 22));
+    tip.style.left = left + "px"; tip.style.top = top + "px";
+    svg.classList.add("has-active");
+    Array.prototype.forEach.call(svg.querySelectorAll(".bar"), function (b, j) { b.classList.toggle("on", j === i); });
+  }
+  function hideTip() {
+    tip.hidden = true; svg.classList.remove("has-active");
+    Array.prototype.forEach.call(svg.querySelectorAll(".bar.on"), function (b) { b.classList.remove("on"); });
+  }
+
+  /* ---------- chart ---------- */
+  function renderChart(animate) {
+    var items = buildItems(); cur = items; geo = []; hits = [];
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+    hideTip();
+    var W = Math.max(300, wrap.clientWidth); curW = W;
+    var n = Math.max(items.length, 1);
+    var left = 46, right = 8, top = 22;
+    var band = (W - left - right) / n;
+    var rotate = state.view === "rounds" && band < 36;
+    var bottom = rotate ? 62 : (state.view === "rounds" ? 46 : 32);
+    var H = W < 520 ? 330 : 390;
+    var base = H - bottom, plotH = base - top;
+    svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+    svg.classList.toggle("anim", !!animate);
+
+    var maxV = items.reduce(function (a, i) { return i.v !== null && i.v > a ? i.v : a; }, 0);
+    var ymax = Math.max(10, Math.ceil(maxV * 1.15 / 10) * 10);
+    var step = ymax > 80 ? 20 : 10;
+    function y(v) { return base - (v / ymax) * plotH; }
+
+    var defs = el("defs", {}, svg);
+    var pat = el("pattern", { id: "rcp-hatch", width: 6, height: 6, patternUnits: "userSpaceOnUse", patternTransform: "rotate(45)" }, defs);
+    el("rect", { width: 2.5, height: 6, class: "hatch-line" }, pat);
+
+    for (var t = 0; t <= ymax; t += step) {
+      el("line", { x1: left, x2: W - right, y1: y(t), y2: y(t), class: t === 0 ? "axis" : "gridline" }, svg);
+      var tl = el("text", { x: left - 8, y: y(t) + 4, "text-anchor": "end" }, svg); tl.textContent = t;
+    }
+    var yt = el("text", { x: 12, y: top + plotH / 2, "text-anchor": "middle", class: "ytitle", transform: "rotate(-90 12 " + (top + plotH / 2) + ")" }, svg);
+    yt.textContent = "New Fellows";
+
+    items.forEach(function (it, i) {
+      var cx = left + band * (i + 0.5);
+      var bw = Math.min(band * 0.66, 56);
+      var g = el("g", { class: "bar" }, svg);
+      var barTop;
+      if (it.v !== null) {
+        var h = Math.max(2, base - y(it.v)), yy = base - h, r = Math.min(4, bw / 2, h);
+        var d = "M" + (cx - bw / 2) + "," + base + " V" + (yy + r) + " Q" + (cx - bw / 2) + "," + yy + " " + (cx - bw / 2 + r) + "," + yy +
+                " H" + (cx + bw / 2 - r) + " Q" + (cx + bw / 2) + "," + yy + " " + (cx + bw / 2) + "," + (yy + r) + " V" + base + " Z";
+        el("path", { d: d, class: "fill" + (it.partial ? " partial" : "") }, g);
+        barTop = yy;
+        if (band >= 21) {
+          var vt = el("text", { x: cx, y: yy - 6, "text-anchor": "middle", class: "val" }, g);
+          vt.textContent = (state.view === "rounds" && it.disp ? it.disp : it.v) + (it.partial ? "+" : "");
+        }
+      } else {
+        el("rect", { x: cx - bw / 2, y: base - 20, width: bw, height: 20, rx: 3, class: "gap" }, g);
+        barTop = base - 20;
+      }
+      if (rotate) {
+        var rt = el("text", { x: cx, y: base + 8, "text-anchor": "end", transform: "rotate(-90 " + cx + " " + (base + 8) + ")", "dominant-baseline": "middle" }, svg);
+        rt.textContent = it.label;
+      } else {
+        var a1 = el("text", { x: cx, y: base + 16, "text-anchor": "middle" }, svg); a1.textContent = it.ax;
+        if (it.ax2) { var a2 = el("text", { x: cx, y: base + 30, "text-anchor": "middle" }, svg); a2.textContent = it.ax2; }
+      }
+      geo.push({ cx: cx, top: barTop, bw: bw });
+      var hit = el("rect", { x: left + band * i, y: top, width: band, height: plotH + 1, class: "hit", tabindex: 0, role: "img",
+        "aria-label": it.title + ": " + (it.v !== null ? it.v + (it.partial ? " or more" : "") + " new Fellows" : (it.s === "pending" ? "not yet announced" : "no published figure")) + ". " + it.conf + "." }, svg);
+      hits.push(hit);
+      hit.addEventListener("pointerenter", function (e) { if (e.pointerType === "mouse") showTip(i); });
+      hit.addEventListener("pointerleave", function (e) { if (e.pointerType === "mouse" && document.activeElement !== hit) hideTip(); });
+      hit.addEventListener("click", function () { showTip(i); });
+      hit.addEventListener("focus", function () { showTip(i); });
+      hit.addEventListener("blur", hideTip);
+      hit.addEventListener("keydown", function (e) {
+        var to = e.key === "ArrowRight" ? i + 1 : e.key === "ArrowLeft" ? i - 1 : e.key === "Home" ? 0 : e.key === "End" ? hits.length - 1 : null;
+        if (to !== null && hits[to]) { e.preventDefault(); hits[to].focus(); }
+      });
+    });
+  }
+
+  /* ---------- table view ---------- */
+  function tableHTML(caption, head, rows) {
+    return "<h3>" + esc(caption) + "</h3><table><thead><tr>" + head.map(function (h) { return "<th>" + esc(h) + "</th>"; }).join("") +
+      "</tr></thead><tbody>" + rows.map(function (r) {
+        return "<tr>" + r.map(function (c, i) { return "<td" + (i === 1 ? ' class="num"' : "") + ">" + esc(c) + "</td>"; }).join("") + "</tr>";
+      }).join("") + "</tbody></table>";
+  }
+  function renderTable() {
+    var saved = state.view; state.view = "rounds"; var rounds = buildItems(); state.view = "years"; var years = buildItems(); state.view = saved;
+    var rr = rounds.map(function (i) { return [i.title, i.v !== null ? String(i.disp || i.v) : "n/a", i.conf, i.note]; });
+    var yr = years.map(function (i) { return [i.title, i.v !== null ? i.v + (i.partial ? "+" : "") : "n/a", i.conf, i.lines.join("; ") + (i.note ? ". " + i.note : "")]; });
+    tablewrap.innerHTML = tableHTML("By award round", ["Round", "New Fellows", "Confidence", "Notes"], rr) +
+                          tableHTML("By calendar year", ["Year", "New Fellows", "Completeness", "Rounds"], yr);
+  }
+
+  /* ---------- CSV ---------- */
+  function downloadCSV() {
+    var rows = [["round", "year", "new_fellows", "status", "confidence", "notes"]];
+    inRange().forEach(function (r) { rows.push([r.label, r.year, r.v === null ? "" : r.v, r.s, confText(r), r.note || ""]); });
+    var csv = rows.map(function (r) { return r.map(function (c) { return '"' + String(c).replace(/"/g, '""') + '"'; }).join(","); }).join("\r\n");
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
+    a.download = "rcpharm-fellowships-by-round.csv";
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  }
+
+  /* ---------- main render ---------- */
+  var TITLES = { rounds: "New Fellows by award round", years: "New Fellows by calendar year", table: "New Fellows: data table" };
+  function render(animate) {
+    $("rcp-title").textContent = TITLES[state.view];
+    Array.prototype.forEach.call(document.querySelectorAll(".seg button"), function (b) {
+      b.setAttribute("aria-pressed", String(b.getAttribute("data-view") === state.view));
+    });
+    renderStats(); renderLegend();
+    if (state.view === "table") {
+      wrap.hidden = true; tablewrap.hidden = false; renderTable(); hideTip();
+    } else {
+      tablewrap.hidden = true; wrap.hidden = false; lastW = wrap.clientWidth; renderChart(animate);
+    }
+    try { parent.postMessage({ rcpHeight: document.documentElement.scrollHeight }, "*"); } catch (e) {}
+  }
+
+  /* ---------- wire up ---------- */
+  var sel = $("from");
+  for (var y = FIRST_YEAR; y <= LAST_YEAR; y++) { var o = document.createElement("option"); o.value = y; o.textContent = y; sel.appendChild(o); }
+  sel.value = state.from;
+  sel.addEventListener("change", function () { state.from = parseInt(sel.value, 10); render(true); });
+  $("gaps").addEventListener("change", function (e) { state.gaps = e.target.checked; render(true); });
+  $("csv").addEventListener("click", downloadCSV);
+  Array.prototype.forEach.call(document.querySelectorAll(".seg button"), function (b) {
+    b.addEventListener("click", function () { state.view = b.getAttribute("data-view"); render(true); });
+  });
+  if ("ResizeObserver" in window) {
+    var raf = 0;
+    new ResizeObserver(function () {
+      /* Redraw on the next frame, outside the observer callback, to avoid the "ResizeObserver loop" warning */
+      if (raf) cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(function () {
+        raf = 0;
+        if (state.view !== "table" && wrap.clientWidth !== lastW && wrap.clientWidth > 0) { lastW = wrap.clientWidth; renderChart(false); }
+      });
+    }).observe(wrap);
+  } else {
+    window.addEventListener("resize", function () { if (state.view !== "table") renderChart(false); });
+  }
+  render(true);
+})();
+</script>
+</body>
+</html>

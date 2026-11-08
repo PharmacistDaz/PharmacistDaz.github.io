@@ -7,7 +7,7 @@ display_date: "Draft — publication date not set"
 permalink: /drafts/rcpharm-fellowships-dashboard/
 ---
 
-I was part of a wide-ranging discussion the other evening, which I think was prompted in part by the [Royal College of Pharmacy Conference](https://www.rcpharm.org/events/rcpharm-annual-conference-2026/) held that day. It was interesting to hear people dismiss the “Fellowship” status of a “dying” organisation. This felt quite personal to me, as I see myself as one of the fortunate people who, through recognition by my peers, was put forward for a Fellowship and accepted by the panel.
+I was part of a wide-ranging discussion the other evening, which I think was prompted in part by the [Royal College of Pharmacy Conference](https://www.rcpharm.org/events/rcpharm-annual-conference-2026/) held that day. It was interesting to hear people dismiss the “Fellowship” status of a “dying” organisation. This felt quite personal to me, as I see myself as one of the fortunate people who, through recognition by my peers, was put forward for a [Fellowship](https://www.rcpharm.org/information/list-of-current-fellows/) and accepted by the panel.
 
 Recognition is a funny thing in our profession. Most of us do our work quietly, and when a Fellowship is announced, it often comes as a surprise to the recipient and to everyone watching.
 

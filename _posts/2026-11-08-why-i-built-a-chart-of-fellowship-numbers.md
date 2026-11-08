@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "Why I Built a Chart of Fellowship Numbers"
+date: 2026-11-08
 tags: [pharmacy, professional-leadership, reflection]
 author: Pharmacist Daz
-display_date: "Draft — publication date not set"
-permalink: /drafts/rcpharm-fellowships-dashboard/
 ---
 
 I was part of a wide-ranging discussion the other evening, which I think was prompted in part by the [Royal College of Pharmacy Conference](https://www.rcpharm.org/events/rcpharm-annual-conference-2026/) held that day. It was interesting to hear people dismiss the “Fellowship” status of a “dying” organisation. This felt quite personal to me, as I see myself as one of the fortunate people who, through recognition by my peers, was put forward for a [Fellowship](https://www.rcpharm.org/information/list-of-current-fellows/) and accepted by the panel.
